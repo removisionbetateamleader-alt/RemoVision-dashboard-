@@ -1,0 +1,9 @@
+/* RemoVision theme colors and styles */
+:root {
+  --primary: #000000;
+  --secondary: #ffffff;
+  --accent: #1db954;
+  --background: #121212;
+  --text-primary: #ffffff;
+  --text-secondary: #b3b3b3;
+}

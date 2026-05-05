@@ -1,81 +1,92 @@
-# RemoVision Dashboard
+# RemoStream
 
-## Overview
-RemoVision Dashboard is a comprehensive digital network enterprise platform designed for secure payments, Spotify integration, and virtual digital dashboarding. This is a multi-website operating system with full monetization capabilities.
+A scalable music streaming application built with modern web technologies.
 
-## Versions
-- **v0.1** - Base dashboard (Current)
-- **v0.2** - Spotify connection
-- **v1.0** - Launch build
+## Project Structure
 
-## Features (Roadmap)
-- 🎵 Spotify Integration
-- 💳 Secure Payment Processing
-- 📊 Digital Dashboard
-- 🔒 Private & Secure Communication
-- 💰 Monetization Ready
-- 🌐 Multi-platform Support
-
-## Tech Stack
-- **Backend:** Node.js / Express
-- **Frontend:** (To be added in v0.2)
-- **Database:** (To be configured)
-- **APIs:** Spotify Web API, Payment Gateway APIs
+```
+RemoStream/
+├── public/           # Static files and PWA manifest
+│   ├── icons/
+│   ├── screenshots/  # App store images
+│   ├── manifest.json # PWA manifest
+│   └── index.html
+│
+├── src/
+│   ├── assets/       # Images, icons, animations
+│   │   ├── images/
+│   │   ├── icons/
+│   │   └── animations/
+│   │
+│   ├── components/   # Reusable React components
+│   │   ├── Player/
+│   │   ├── Navbar/
+│   │   ├── Sidebar/
+│   │   ├── Cards/
+│   │   └── UI/
+│   │
+│   ├── pages/        # Page-level components
+│   │   ├── Home/
+│   │   ├── Discover/
+│   │   ├── Library/
+│   │   ├── Profile/
+│   │   └── PlayerView/
+│   │
+│   ├── services/     # API, auth, and player logic
+│   │   ├── api.js
+│   │   ├── auth.js
+│   │   └── player.js
+│   │
+│   ├── store/        # Global state management
+│   │   └── state.js
+│   │
+│   ├── hooks/        # Custom React hooks
+│   │   └── usePlayer.js
+│   │
+│   ├── utils/        # Helper functions
+│   │   └── helpers.js
+│   │
+│   ├── styles/       # Global and theme styles
+│   │   ├── global.css
+│   │   └── theme.css
+│   │
+│   ├── App.js        # Root component
+│   └── main.js       # Entry point
+│
+├── .gitignore        # Git ignore rules
+├── package.json      # Project dependencies
+└── README.md         # This file
+```
 
 ## Getting Started
 
-### Prerequisites
-- Node.js (v16 or higher)
-- npm or yarn
-- Spotify Developer Account (for v0.2+)
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Start development server: `npm run dev`
+4. Build for production: `npm run build`
 
-### Installation
-```bash
-# Clone the repository
-git clone https://github.com/removisionbetateamleader-alt/RemoVision-dashboard-.git
-cd RemoVision-dashboard-
+## Features (Coming Soon)
 
-# Install dependencies
-npm install
+- 🎵 Music streaming
+- 🔐 User authentication
+- 📚 Personalized library
+- 🎯 Discovery recommendations
+- 👤 User profiles
+- 📱 PWA support
+- 🎨 RemoVision themed UI
 
-# Create environment file
-cp .env.example .env
+## Tech Stack
 
-# Start development server
-npm run dev
-```
+- **Frontend**: React / Vue
+- **State Management**: Zustand / Redux (TBD)
+- **API**: Firebase / Custom Backend
+- **Styling**: CSS / Tailwind CSS
+- **Build Tool**: Vite
 
-### Configuration
-Create a `.env` file in the root directory:
-```
-NODE_ENV=development
-PORT=3000
-SPOTIFY_CLIENT_ID=your_client_id
-SPOTIFY_CLIENT_SECRET=your_client_secret
-SPOTIFY_REDIRECT_URI=http://localhost:3000/callback
-```
+## Contributing
 
-## Project Structure
-```
-RemoVision-dashboard-/
-├── src/
-│   ├── index.js
-│   ├── config/
-│   ├── controllers/
-│   ├── routes/
-│   ├── middleware/
-│   ├── utils/
-│   └── services/
-├── public/
-├── tests/
-├── .env.example
-├── .gitignore
-├── package.json
-└── README.md
-```
+Contributions welcome! Please follow the project structure guidelines.
 
 ## License
-MIT License - See LICENSE file for details
 
-## Support
-For issues and feature requests, please open an issue on GitHub.
+MIT License
