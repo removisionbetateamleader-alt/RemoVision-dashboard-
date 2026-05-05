@@ -1,0 +1,33 @@
+{
+  "name": "removision-dashboard",
+  "version": "0.1.0",
+  "description": "RemoVision Dashboard - Digital Network Enterprises platform with secure payment integration and Spotify connectivity",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "jest",
+    "lint": "eslint src/"
+  },
+  "keywords": [
+    "dashboard",
+    "spotify",
+    "payment",
+    "digital-network",
+    "removision"
+  ],
+  "author": "RemoVision Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.0",
+    "dotenv": "^16.0.0",
+    "axios": "^1.4.0",
+    "spotify-web-api-node": "^5.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.0",
+    "jest": "^29.0.0",
+    "eslint": "^8.0.0"
+  }
+}
